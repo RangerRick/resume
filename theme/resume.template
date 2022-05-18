@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Resume of {{basics.name}}</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+			{{{css}}}
+		</style>
+	</head>
+	<body id="top">
+		<div id="cv">
+			<div class="mainDetails">
+				<div id="headshot">
+					<img src="{{basics.photo}}" alt="avatar" />
+				</div>
+				<div id="name">
+					<h1>{{basics.name}}</h1>
+					<h2>{{basics.label}}</h2>
+				</div>
+				<div id="contactDetails">
+					{{#basics.location}}
+                        <div class="contact-item">
+                          <div class="icon pull-left text-center"><span class="fa fa-map-marker fa-fw"></span></div>
+                          {{#basics.location.address}}<div class="title pull-right">{{basics.location.address}}</div>{{/basics.location.address}}
+                          <div class="title {{^basics.location.address}}only {{/basics.location.address}} pull-right">{{basics.location.city}}{{#basics.location.region}}, {{basics.location.region}}{{/basics.location.region}}{{#basics.location.postalCode}} {{basics.location.postalCode}}{{/basics.location.postalCode}}{{#basics.location.countryCode}} {{basics.location.countryCode}}{{/basics.location.countryCode}}</div>
+                        </div>
+                    {{/basics.location}}
+                    {{#basics.phone}}
+                        <div class="contact-item">
+                          <div class="icon pull-left text-center"><span class="fa fa-phone fa-fw"></span></div>
+                          <div class="title only pull-right">{{basics.phone}}</div>
+                        </div>
+                    {{/basics.phone}}
+                    {{#basics.email}}
+                        <div class="contact-item">
+                          <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
+                          <div class="title only pull-right"><a href="mailto:{{basics.email}}" target="_blank">{{basics.email}}</a></div>
+                        </div>
+                    {{/basics.email}}
+                    {{#basics.website}}
+                        <div class="contact-item">
+                          <div class="icon pull-left text-center"><span class="fa fa-globe fa-fw"></span></div>
+                          <div class="title only pull-right"><a href="{{basics.website}}" target="_blank">{{basics.website}}</a></div>
+                        </div>
+                    {{/basics.website}}
+                    {{#basics.profiles}}
+                        <div class="contact-item">
+                          <div class="icon pull-left text-center"><span class="{{iconClass}} fa-fw"></span></div>
+                          <div class="description pull-right"><a href="{{url}}" target="_blank">{{#username}}{{username}}{{/username}}{{^username}}{{url}}{{/username}}</a></div>
+                        </div>
+                    {{/basics.profiles}}
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="mainArea">
+				<section>
+					<article>
+						<div class="sectionTitle">
+							<h1>About</h1>
+						</div>
+						<div class="sectionContent">
+							<p>{{{basics.summary}}}</p>
+						</div>
+					</article>
+					<div class="clear"></div>
+				</section>
+				<section>
+					<div class="sectionTitle">
+						<h1><B>Work</B></h1>
+					</div>
+					<div class="sectionContent">
+						<article>
+							{{#work}}
+							{{#url}}
+                            <h2>{{position}} at <a href="{{url}}">{{name}}</a></h2>
+							{{/url}}
+							{{^url}}
+                            <h2>{{position}} at {{name}}</h2>
+							{{/url}}
+                            <p class="subDetails">{{startDateMonth}}{{startDateYear}} – {{endDateMonth}}{{endDateYear}} &bull; {{location}}</p>
+                            {{#boolHighlights}}
+                                <ul class="info">
+                                    {{#highlights}}
+                                    <li>{{{.}}}</li>
+                                    {{/highlights}}
+                                </ul>
+                            {{/boolHighlights}}
+                            <br/>
+							{{/work}}
+						</article>
+						<br>
+					</div>
+					<div class="clear"></div>
+				</section>
+				<!--
+				<section>
+					<div class="sectionTitle">
+						<h1><B>CERTIFICATIONS</B></h1>
+					</div>
+					<div class="sectionContent">
+						<article>
+							{{#certificates}}
+                            <h2>{{name}}</h2>
+                            <p class="subDetails">{{certDateMonth}}{{certDateYear}}</p>
+                            <br/>
+							{{/certificates}}
+						</article>
+						<br>
+					</div>
+					<div class="clear"></div>
+				</section>
+				-->
+				<section>
+					<div class="sectionTitle">
+						<h1><B>Projects</B></h1>
+					</div>
+					<div class="sectionContent">
+						<article>
+							{{#projects}}
+                            <h2>{{name}}</h2>
+                            <p class="subDetails">{{startDateMonth}}{{startDateYear}} – {{endDateMonth}}{{endDateYear}}</p>
+                            {{#boolHighlights}}
+                                <ul class="info">
+                                    {{#highlights}}
+                                    <li>{{{.}}}</li>
+                                    {{/highlights}}
+                                </ul>
+                            {{/boolHighlights}}
+                            <br/>
+							{{/projects}}
+						</article>
+						<br>
+					</div>
+					<div class="clear"></div>
+				</section>
+				<section>
+					<div class="sectionTitle">
+                        <h1><B>Skills</B></h1>
+                    </div>
+                    <div class="sectionContent">
+                    {{#skills}}
+                        <article>
+						<div class="info">
+                            <br/><h2>{{name}}</h2>
+							<div class="info">
+								{{#level}}<span class="skill-level">{{level}}</span>{{/level}}
+							</div>
+							<div class="col-sm-offset-1 col-sm-12 subDetails">
+								{{#keywords}}
+								<span class= "skill badge">{{{.}}}  </span>
+								{{/keywords}}
+							</div>
+
+						</div>
+                        </article>
+                        {{/skills}}
+					</div>
+					<div class="clear"></div>
+				</section>
+				<section>
+					{{#educationBool}}
+					<!-- EDUCATION -->
+                    <div class="sectionTitle">
+                        <h1><B>EDUCATION</B></h1>
+                    </div>
+                    <div class="sectionContent">
+                    {{#education}}
+                        <article>
+                            <h2>{{institution}}</h2>
+                            {{#studyType}}
+                                <p class="subDetails">{{studyType}} in {{area}}</p>
+                            {{/studyType}}
+                            <p class="subDetails">{{startDateYear}} - {{endDateYear}}</p>
+                            {{#gpa}}
+                            <p class="subDetails">
+                                GPA: {{gpa}}
+                            </p>
+                            {{/gpa}}
+                            {{#educationCourses}}
+                                <div class="subDetails">Courses</div>
+                                <ul class="info">
+                                    {{#courses}}
+                                        <li>{{{.}}}</li>
+                                    {{/courses}}
+                                </ul>
+                            {{/educationCourses}}
+                        </article>
+                        <br>
+                        {{/education}}
+                    </div>
+					<div class="clear" />
+					{{/educationBool}}
+				</section>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+			var pageTracker = _gat._getTracker("UA-3753241-1");
+			pageTracker._initData();
+			pageTracker._trackPageview();
+		</script>
+	</body>
+</html>

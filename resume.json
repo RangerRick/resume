@@ -1,0 +1,251 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Benjamin Reed",
+    "label": "Software Engineer",
+    "image": "",
+    "email": "resume@raccoonfink.com",
+    "phone": "(919) 200-0655",
+    "url": "https://rangerrick.github.io/",
+    "summary": "A software developer, musician, and general jack-of-all-trades, I have been following nerdy pursuits since childhood. I enjoy learning new technologies, and applying that knowledge to the development of good software. I am proficient in a wide range of technologies, and just as good at applying my wide breadth of knowledge as I am at doing a deep dive into a technology when suitable.",
+    "location": {
+      "address": "7428 Bleasdale Ct",
+      "city": "Apex",
+      "postalCode": "NC, 27539",
+      "countryCode": "US",
+      "region": "Southeast"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "RangerRick",
+        "url": "https://twitter.com/RangerRick"
+      },
+      {
+        "network": "Bandcamp",
+        "username": "Raccoon Fink",
+        "url": "https://raccoonfink.bandcamp.com/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "The OpenNMS Group, Inc.",
+      "location": "Morrisville, NC",
+      "description": "Open-Source Network Monitoring Software",
+      "position": "Principal Software Engineer",
+      "url": "https://www.opennms.com/",
+      "startDate": "2007-05-01",
+      "summary": "Java, JavaScript, and systems programmer at an open-source software company. Responsible for for development and maintenance of OpenNMS Horizon and Meridian, as well as other related projects.",
+      "highlights": [
+        "Core developer on the Java and JavaScript code in the OpenNMS codebase.",
+        "Maintain the RPM and Debian packaging, and contribute significantly to the Docker image maintenance and publishing.",
+        "Primary maintainer of the CircleCI pipeline, providing build and test infrastructure for LTS branches, releases, and vendor branches.",
+        "Primary maintainer of related projects including JNI native interfaces to ICMP and RRDtool.",
+        "Core maintainer of OpenNMS Helm, a plugin providing datasources and views for Grafana.",
+        "Author of the (mostly) weekly development newsletter \"OpenNMS On the Horizon\".",
+        "\"Company historian\", responsible for helping new hires navigate the software and understand our code and systems.",
+        "Sole developer of OpenNMS Compass, an Ionic-based mobile interface to OpenNMS."
+      ]
+    },
+    {
+      "name": "Raritan, Inc.",
+      "location": "Raleigh, NC",
+      "description": "KVMs and Managed Power",
+      "position": "Software Engineer",
+      "url": "http://www.raritan.com/",
+      "startDate": "2006-02-01",
+      "endDate": "2007-05-01",
+      "summary": "Perl and Java programmer.  Responsible for developing and maintaining a number of subsystems for the CC-NOC line of network management appliances.",
+      "highlights": [
+        "Updated appliance software to run on the latest CentOS, including aiding in design and implementation of a set of tools for automated custom kickstart distribution generation for rapid appliance and OS development.",
+        "Wrote a tool for restoring old backups that converts and upgrades backup data between versions seamlessly, as well as allow backups to be restored to any CC-NOC appliance while retaining existing events and performance data.",
+        "Wrote a tool to completely automate the build process, building on the existing kickstart infrastructure."
+      ]
+    },
+    {
+      "name": "Motricity, Inc.",
+      "location": "Durham, NC",
+      "description": "Mobile Data and Solutions Provider",
+      "position": "Software Engineer",
+      "startDate": "2004-07-01",
+      "endDate": "2006-02-01",
+      "summary": "Perl and Java programmer.  Responsible for developing and maintaining eReader.com -- a large-scale mod_perl-based e-commerce site -- using Red Hat Enterprise Linux, Apache, and mod_perl (HTML::Mason) as well as internal Java-based systems for e-commerce integration.",
+      "highlights": [
+        "Successfully performed a large-scale move of the eReader.com site to a new colocation facility, including configuring hardware and software, setting up procedures for migration, and developing tools for reproducing a production environment on new hardware.",
+        "Migration of a CVS repository to Subversion.",
+        "Design and implementation of a custom FTP server to be used by publishers and content administrators.",
+        "Implementation and aid in design of a Java-based business-logic proxy for handling mailing lists across multiple properties from a central location.",
+        "Designated \"Technical Captain\" (subject matter expert) for the care and future development of the business-logic proxy project.",
+        "Design and implementation of the Omniture site performance and usage tracking system for eReader.com, including creating a detailed taxonomy standard to be used across Motricity's properties.  I also acted as a technical resource to aid in the development of other Motricity Omniture implementations.",
+        "Design and implementation of an ONIX import infrastructure for receiving books from other publishers and book resellers for use on the eReader.com site."
+      ]
+    },
+    {
+      "name": "Oculan Corp.",
+      "location": "Raleigh, NC",
+      "description": "Network Monitoring Solutions",
+      "position": "System Administration and Operational Support",
+      "startDate": "2000-08-01",
+      "endDate": "2004-05-01",
+      "summary": "Perform a wide variety of administration and automation tasks. Duties include design, implementation, maintainance, and administration of the source code tree, web, mail, and other infrastructure servers, as well as other office network and system admin.  Primarily involved in scripting and support related to the infrastructure that provides backups, updates, and nightly tasks for Oculan's line of network management appliances.",
+      "highlights": [
+        "Design and development of a customized Linux distribution for our appliances.",
+        "RPM packaging and distribution system for updates",
+        "Design and implementation of the OpticNerve build system, using Ant and Java.",
+        "Software for doing an in-place upgrade of the underlying (Linux) operating system on appliances in the field, while retaining historical data.",
+        "A system for allowing the customer to initiate a support connection that creates a tunnel back to the appliance for trouble-shooting.",
+        "A secure (SMTP-Auth-based) mail system for employees in the office and around the globe.",
+        "Tools for backing up and monitoring remote appliances, as well as notifying customers of potential issues through our support team.",
+        "Design and implementation of a filtering reverse proxy for web access to a custom demo environment using Apache and mod_perl."
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "The Fink Project",
+      "position": "Project Core Team and Packager",
+      "url": "https://finkproject.org/",
+      "startDate": "2001-09-01",
+      "endDate": "2014-01-01",
+      "summary": "A system for the development and distribution of Open-Source software on Mac OS X.",
+      "highlights": [
+        "Helped develop the core Fink software and manage the infrastructure for distribution of packages.",
+        "Maintained hundreds of ported packages.",
+        "Worked with Apple to diagnose and report issues with Mac OS X.",
+        "Coordinated with MacPorts and Apple to develop a prototype packaging system for Mac OS X. (unreleased)",
+        "Ported KDE to Mac OS X."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript"
+      ]
+    },
+    {
+      "name": "Mobile Development",
+      "level": "Advanced",
+      "keywords": [
+        "Ionic",
+        "Angular",
+        "Capacitor",
+        "Cordova",
+        "iOS",
+        "Android"
+      ]
+    },
+    {
+      "name": "Java",
+      "level": "Master",
+      "keywords": [
+        "Maven",
+        "Java",
+        "Eclipse",
+        "Karaf"
+      ]
+    },
+    {
+      "name": "DevOps",
+      "level": "Advanced",
+      "keywords": [
+        "CentOS",
+        "CircleCI",
+        "Bamboo",
+        "Karaf",
+        "Docker",
+        "Bash",
+        "Perl"
+      ]
+    }
+  ],
+  "interests": [
+    {
+      "name": "Music Composition",
+      "keywords": [
+        "Raccoon Fink",
+        "The Garages",
+        "Putrid Shark"
+      ]
+    },
+    {
+      "name": "Origami",
+      "keywords": [
+        "OUSA",
+        "Origami USA"
+      ]
+    },
+    {
+      "name": "Pandemic Baking",
+      "keywords": [
+        "Pizza",
+        "Cinnamon Buns",
+        "Stollen"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Tarus Balog",
+      "reference": "something something"
+    }
+  ],
+  "projects": [
+    {
+      "name": "moment-javaformat",
+      "description": "A TypeScript project to support Java DateTime format strings in moment.js",
+      "keywords": [
+        "npm",
+        "Node.js",
+        "JavaScript",
+        "TypeScript",
+        "Java"
+      ],
+      "startDate": "2020-01-22",
+      "url": "https://www.npmjs.com/package/@rangerrick/moment-javaformat/"
+    },
+    {
+      "name": "Blases Loaded (archived)",
+      "description": "An Ionic Angular iOS, Android, and web app for watching live Blaseball games. Blaseball is a web-based community-driven baseball horror game, and is currently on hiatus. They are developing an official mobile app, so I have archived this project.",
+      "url": "https://github.com/RangerRick/blobile/",
+      "startDate": "2020-08-25",
+      "endDate": "2022-03-01",
+      "keywords": [
+        "npm",
+        "Node.js",
+        "JavaScript",
+        "TypeScript",
+        "Ionic",
+        "Angular",
+        "Capacitor",
+        "Blaseball",
+        "Game",
+        "SVG"
+      ]
+    },
+    {
+      "name": "Git Cookbook",
+      "description": "A git-based cookbook for sharing recipes.",
+      "url": "https://rangerrick.github.io/git-cookbook/",
+      "startDate": "2021-08-12",
+      "keywords": [
+        "baking",
+        "cooking",
+        "cookbook",
+        "mdbook",
+        "markdown"
+      ]
+    }
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/RangerRick/resume/main/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2022-05-17T15:43:00"
+  }
+}
