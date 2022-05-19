@@ -15,8 +15,7 @@
     "hackmyresume": "^1.9.0-beta",
     "lodash": "^4.17.21",
     "mustache": "^4.2.0",
-    "nodemon": "^2.0.16",
-    "rimraf": "^3.0.2"
+    "nodemon": "^2.0.16"
   },
   "nodemonConfig": {
     "delay": 500,
