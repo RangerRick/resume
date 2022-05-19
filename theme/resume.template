@@ -8,7 +8,7 @@
 		<title>Resume of {{basics.name}}</title>
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-		<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Maven Pro|PT Sans' rel='stylesheet' type='text/css'>
 		<style type="text/css">
 			{{{css}}}
 		</style>
@@ -17,7 +17,7 @@
 		<div id="cv">
 			<div class="mainDetails">
 				<div id="headshot">
-					<img src="{{basics.photo}}" alt="avatar" />
+					<img src="{{photo}}" alt="avatar" />
 				</div>
 				<div id="name">
 					<h1>{{basics.name}}</h1>
@@ -33,8 +33,8 @@
                     {{/basics.location}}
                     {{#basics.phone}}
                         <div class="contact-item">
-                          <div class="icon pull-left text-center"><span class="fa fa-phone fa-fw"></span></div>
-                          <div class="title only pull-right">{{basics.phone}}</div>
+                          <div class="icon pull-left text-center"><a href="tel:{{basics.phone}}"><span class="fa fa-phone fa-fw"></span></a></div>
+                          <div class="title only pull-right"><a href="tel:{{basics.phone}}">{{basics.phone}}</a></div>
                         </div>
                     {{/basics.phone}}
                     {{#basics.email}}
@@ -59,6 +59,7 @@
 				<div class="clear"></div>
 			</div>
 			<div id="mainArea">
+				{{#basics.summary}}
 				<section>
 					<article>
 						<div class="sectionTitle">
@@ -70,6 +71,8 @@
 					</article>
 					<div class="clear"></div>
 				</section>
+				{{/basics.summary}}
+				{{#workBool}}
 				<section>
 					<div class="sectionTitle">
 						<h1><B>Work</B></h1>
@@ -77,12 +80,15 @@
 					<div class="sectionContent">
 						<article>
 							{{#work}}
+							<h1>
 							{{#url}}
-                            <h2>{{position}} at <a href="{{url}}">{{name}}</a></h2>
+                            <a href="{{url}}">{{name}}</a>
 							{{/url}}
 							{{^url}}
-                            <h2>{{position}} at {{name}}</h2>
+                            {{name}}
 							{{/url}}
+							</h1>
+							<h2>{{position}}</h2>
                             <p class="subDetails">{{startDateMonth}}{{startDateYear}} – {{endDateMonth}}{{endDateYear}} &bull; {{location}}</p>
                             {{#boolHighlights}}
                                 <ul class="info">
@@ -94,37 +100,85 @@
                             <br/>
 							{{/work}}
 						</article>
-						<br>
 					</div>
 					<div class="clear"></div>
 				</section>
+				{{/workBool}}
 				<!--
+				{{#volunteerBool}}
 				<section>
 					<div class="sectionTitle">
-						<h1><B>CERTIFICATIONS</B></h1>
+						<h1><B>Volunteer</B></h1>
 					</div>
 					<div class="sectionContent">
 						<article>
-							{{#certificates}}
-                            <h2>{{name}}</h2>
-                            <p class="subDetails">{{certDateMonth}}{{certDateYear}}</p>
+							{{#volunteer}}
+							<h1>
+							{{#url}}
+                            <a href="{{url}}">{{organization}}</a>
+							{{/url}}
+							{{^url}}
+                            {{organization}}
+							{{/url}}
+							</h1>
+							{{#position}}
+							<h2>{{position}}</h2>
+							{{/position}}
+                            <p class="subDetails">{{startDateMonth}}{{startDateYear}} – {{endDateMonth}}{{endDateYear}}</p>
                             <br/>
-							{{/certificates}}
+							{{#boolHighlights}}
+							<ul class="info">
+							{{#highlights}}
+							<li>{{{.}}}</li>
+							{{/highlights}}
+							</ul>
+							{{/boolHighlights}}
+							{{/volunteer}}
 						</article>
 						<br>
 					</div>
 					<div class="clear"></div>
 				</section>
+				{{/volunteerBool}}
 				-->
-				<section>
+				{{#allProjectsBool}}
+				<section class="projects">
 					<div class="sectionTitle">
 						<h1><B>Projects</B></h1>
 					</div>
 					<div class="sectionContent">
 						<article>
-							{{#projects}}
-                            <h2>{{name}}</h2>
+							{{#volunteer}}
+							<h1>
+							{{#url}}
+                            <a href="{{url}}">{{organization}}</a>
+							{{/url}}
+							{{^url}}
+                            {{organization}}
+							{{/url}}
+							</h1>
+							{{#position}}
+							<h2>{{position}}</h2>
+							{{/position}}
                             <p class="subDetails">{{startDateMonth}}{{startDateYear}} – {{endDateMonth}}{{endDateYear}}</p>
+							{{#boolHighlights}}
+							<ul class="info">
+							{{#highlights}}
+							<li>{{{.}}}</li>
+							{{/highlights}}
+							</ul>
+							{{/boolHighlights}}
+							<br>
+							{{/volunteer}}
+							{{#projects}}
+							{{#url}}
+                            <h1><a href="{{url}}">{{name}}</a></h1>
+							{{/url}}
+							{{^url}}
+                            <h2>{{name}}</h2>
+							{{/url}}
+                            <p class="subDetails">{{startDateMonth}}{{startDateYear}} – {{endDateMonth}}{{endDateYear}}</p>
+							<p class="description">{{description}}</p>
                             {{#boolHighlights}}
                                 <ul class="info">
                                     {{#highlights}}
@@ -135,11 +189,12 @@
                             <br/>
 							{{/projects}}
 						</article>
-						<br>
 					</div>
 					<div class="clear"></div>
 				</section>
-				<section>
+				{{/allProjectsBool}}
+				{{#skillsBool}}
+				<section class="skills">
 					<div class="sectionTitle">
                         <h1><B>Skills</B></h1>
                     </div>
@@ -147,56 +202,25 @@
                     {{#skills}}
                         <article>
 						<div class="info">
-                            <br/><h2>{{name}}</h2>
-							<div class="info">
-								{{#level}}<span class="skill-level">{{level}}</span>{{/level}}
-							</div>
+                            <h2>
+							{{name}}
+							</h2>
+							{{#level}}
+							<div class="skill-level {{level}}">{{level}}</div>
+							{{/level}}
 							<div class="col-sm-offset-1 col-sm-12 subDetails">
 								{{#keywords}}
 								<span class= "skill badge">{{{.}}}  </span>
 								{{/keywords}}
 							</div>
-
+							<br/>
 						</div>
                         </article>
                         {{/skills}}
 					</div>
 					<div class="clear"></div>
 				</section>
-				<section>
-					{{#educationBool}}
-					<!-- EDUCATION -->
-                    <div class="sectionTitle">
-                        <h1><B>EDUCATION</B></h1>
-                    </div>
-                    <div class="sectionContent">
-                    {{#education}}
-                        <article>
-                            <h2>{{institution}}</h2>
-                            {{#studyType}}
-                                <p class="subDetails">{{studyType}} in {{area}}</p>
-                            {{/studyType}}
-                            <p class="subDetails">{{startDateYear}} - {{endDateYear}}</p>
-                            {{#gpa}}
-                            <p class="subDetails">
-                                GPA: {{gpa}}
-                            </p>
-                            {{/gpa}}
-                            {{#educationCourses}}
-                                <div class="subDetails">Courses</div>
-                                <ul class="info">
-                                    {{#courses}}
-                                        <li>{{{.}}}</li>
-                                    {{/courses}}
-                                </ul>
-                            {{/educationCourses}}
-                        </article>
-                        <br>
-                        {{/education}}
-                    </div>
-					<div class="clear" />
-					{{/educationBool}}
-				</section>
+				{{/skillsBool}}
 			</div>
 		</div>
 		<script type="text/javascript">
