@@ -28,6 +28,6 @@
     "start": "npm run render",
     "watch": "nodemon",
     "hackmyresume": "hackmyresume",
-    "render": "hackmyresume build resume.json TO ./dist/resume.all -t theme"
+    "render": "./render.sh"
   }
 }
