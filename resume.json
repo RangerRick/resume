@@ -3,11 +3,10 @@
   "basics": {
     "name": "Benjamin Reed",
     "label": "Software Engineer",
-    "image": "",
     "email": "resume@raccoonfink.com",
     "phone": "(919) 200-0655",
     "url": "https://rangerrick.github.io/",
-    "summary": "A software developer, musician, and general jack-of-all-trades, I have been following nerdy pursuits since childhood. I enjoy learning new technologies, and applying that knowledge to the development of good software. I am proficient in a wide range of technologies, and just as good at applying my wide breadth of knowledge as I am at doing a deep dive into a technology when suitable.",
+    "summary": "A software developer, musician, and tech polymath, I have been following nerdy pursuits since childhood. I enjoy learning new technologies, and applying that knowledge to the development of good software. I am proficient in a wide range of technologies, and just as good at applying my wide breadth of knowledge as I am at doing a deep dive into details when suitable.",
     "location": {
       "address": "7428 Bleasdale Ct",
       "city": "Apex",
@@ -114,7 +113,7 @@
         "Maintained hundreds of ported packages.",
         "Worked with Apple to diagnose and report issues with Mac OS X.",
         "Coordinated with MacPorts and Apple to develop a prototype packaging system for Mac OS X. (unreleased)",
-        "Ported KDE to Mac OS X."
+        "Ported KDE to Qt/Mac on Mac OS X."
       ]
     }
   ],
@@ -130,6 +129,16 @@
       ]
     },
     {
+      "name": "Java",
+      "level": "Master",
+      "keywords": [
+        "Maven",
+        "Java",
+        "Eclipse",
+        "Karaf"
+      ]
+    },
+    {
       "name": "Mobile Development",
       "level": "Advanced",
       "keywords": [
@@ -139,16 +148,6 @@
         "Cordova",
         "iOS",
         "Android"
-      ]
-    },
-    {
-      "name": "Java",
-      "level": "Master",
-      "keywords": [
-        "Maven",
-        "Java",
-        "Eclipse",
-        "Karaf"
       ]
     },
     {
@@ -198,6 +197,19 @@
   ],
   "projects": [
     {
+      "name": "Git Cookbook",
+      "description": "A git-based cookbook for sharing recipes.",
+      "url": "https://rangerrick.github.io/git-cookbook/",
+      "startDate": "2021-08-12",
+      "keywords": [
+        "baking",
+        "cooking",
+        "cookbook",
+        "mdbook",
+        "markdown"
+      ]
+    },
+    {
       "name": "moment-javaformat",
       "description": "A TypeScript project to support Java DateTime format strings in moment.js",
       "keywords": [
@@ -227,19 +239,6 @@
         "Blaseball",
         "Game",
         "SVG"
-      ]
-    },
-    {
-      "name": "Git Cookbook",
-      "description": "A git-based cookbook for sharing recipes.",
-      "url": "https://rangerrick.github.io/git-cookbook/",
-      "startDate": "2021-08-12",
-      "keywords": [
-        "baking",
-        "cooking",
-        "cookbook",
-        "mdbook",
-        "markdown"
       ]
     }
   ],
