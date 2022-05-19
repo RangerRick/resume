@@ -25,10 +25,17 @@
 				</div>
 				<div id="contactDetails">
 					{{#basics.location}}
-                        <div class="contact-item">
+                        <div class="contact-item location">
                           <div class="icon pull-left text-center"><span class="fa fa-map-marker fa-fw"></span></div>
-                          {{#basics.location.address}}<div class="title pull-right">{{basics.location.address}}</div>{{/basics.location.address}}
-                          <div class="title {{^basics.location.address}}only {{/basics.location.address}} pull-right">{{basics.location.city}}{{#basics.location.region}}, {{basics.location.region}}{{/basics.location.region}}{{#basics.location.postalCode}} {{basics.location.postalCode}}{{/basics.location.postalCode}}{{#basics.location.countryCode}} {{basics.location.countryCode}}{{/basics.location.countryCode}}</div>
+						  <div class="title {{^basics.location.address}}only {{/basics.location.address}}pull-right">
+							{{#basics.location.address}}
+							<div class="address">{{basics.location.address}}</div>
+							{{/basics.location.address}}
+							<div class="postal">
+								{{basics.location.city}}
+								{{#basics.location.postalCode}}{{basics.location.postalCode}}{{/basics.location.postalCode}}
+							</div>
+						  </div>
                         </div>
                     {{/basics.location}}
                     {{#basics.phone}}
@@ -75,11 +82,11 @@
 				{{#workBool}}
 				<section>
 					<div class="sectionTitle">
-						<h1><B>Work</B></h1>
+						<h1>Work</h1>
 					</div>
 					<div class="sectionContent">
+						{{#work}}
 						<article>
-							{{#work}}
 							<h1>
 							{{#url}}
                             <a href="{{url}}">{{name}}</a>
@@ -97,58 +104,20 @@
                                     {{/highlights}}
                                 </ul>
                             {{/boolHighlights}}
-                            <br/>
-							{{/work}}
 						</article>
+						{{/work}}
 					</div>
 					<div class="clear"></div>
 				</section>
 				{{/workBool}}
-				<!--
-				{{#volunteerBool}}
-				<section>
-					<div class="sectionTitle">
-						<h1><B>Volunteer</B></h1>
-					</div>
-					<div class="sectionContent">
-						<article>
-							{{#volunteer}}
-							<h1>
-							{{#url}}
-                            <a href="{{url}}">{{organization}}</a>
-							{{/url}}
-							{{^url}}
-                            {{organization}}
-							{{/url}}
-							</h1>
-							{{#position}}
-							<h2>{{position}}</h2>
-							{{/position}}
-                            <p class="subDetails">{{startDateMonth}}{{startDateYear}} – {{endDateMonth}}{{endDateYear}}</p>
-                            <br/>
-							{{#boolHighlights}}
-							<ul class="info">
-							{{#highlights}}
-							<li>{{{.}}}</li>
-							{{/highlights}}
-							</ul>
-							{{/boolHighlights}}
-							{{/volunteer}}
-						</article>
-						<br>
-					</div>
-					<div class="clear"></div>
-				</section>
-				{{/volunteerBool}}
-				-->
 				{{#allProjectsBool}}
 				<section class="projects">
 					<div class="sectionTitle">
-						<h1><B>Projects</B></h1>
+						<h1>Projects</h1>
 					</div>
 					<div class="sectionContent">
+						{{#volunteer}}
 						<article>
-							{{#volunteer}}
 							<h1>
 							{{#url}}
                             <a href="{{url}}">{{organization}}</a>
@@ -168,9 +137,10 @@
 							{{/highlights}}
 							</ul>
 							{{/boolHighlights}}
-							<br>
-							{{/volunteer}}
-							{{#projects}}
+						</article>
+						{{/volunteer}}
+						{{#projects}}
+						<article>
 							{{#url}}
                             <h1><a href="{{url}}">{{name}}</a></h1>
 							{{/url}}
@@ -186,9 +156,8 @@
                                     {{/highlights}}
                                 </ul>
                             {{/boolHighlights}}
-                            <br/>
-							{{/projects}}
 						</article>
+						{{/projects}}
 					</div>
 					<div class="clear"></div>
 				</section>
@@ -196,27 +165,30 @@
 				{{#skillsBool}}
 				<section class="skills">
 					<div class="sectionTitle">
-                        <h1><B>Skills</B></h1>
+                        <h1>Skills</h1>
                     </div>
                     <div class="sectionContent">
                     {{#skills}}
-                        <article>
+					<article>
 						<div class="info">
+							<div class="skill-header">
                             <h2>
 							{{name}}
 							</h2>
 							{{#level}}
 							<div class="skill-level {{level}}">{{level}}</div>
 							{{/level}}
-							<div class="col-sm-offset-1 col-sm-12 subDetails">
-								{{#keywords}}
-								<span class= "skill badge">{{{.}}}  </span>
-								{{/keywords}}
 							</div>
-							<br/>
+							{{#keywordsBool}}
+							<ul class="skills-keywords subDetails">
+								{{#keywords}}
+								<li class="skill badge">{{{.}}}</li>
+								{{/keywords}}
+							</ul>
+							{{/keywordsBool}}
 						</div>
-                        </article>
-                        {{/skills}}
+					</article>
+					{{/skills}}
 					</div>
 					<div class="clear"></div>
 				</section>

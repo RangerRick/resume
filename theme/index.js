@@ -253,6 +253,11 @@ function render(resumeObject) {
         if (resumeObject.skills[0].name) {
             resumeObject.skillsBool = true;
         }
+        for (const skill of resumeObject.skills) {
+            if (skill.keywords && skill.keywords.length) {
+                skill.keywordsBool = true;
+            }
+        }
     }
 
     if (resumeObject.interests && resumeObject.interests.length) {
