@@ -1,7 +1,8 @@
-var fs = require('fs');
-var _ = require('lodash');
-var gravatar = require('gravatar');
-var Mustache = require('mustache');
+const fs = require('fs');
+
+const _ = require('lodash');
+const gravatar = require('gravatar');
+const Mustache = require('mustache');
 
 var d = new Date();
 var curyear = d.getFullYear();
@@ -40,10 +41,9 @@ function render(resumeObject) {
     resumeObject.basics.capitalName = resumeObject.basics.name.toUpperCase();
     if(resumeObject.basics && resumeObject.basics.email) {
         resumeObject.basics.gravatar = gravatar.url(resumeObject.basics.email, {
-                        s: '200',
-                        r: 'pg',
-                        d: 'mm'
-                    });
+                        d: 'blank',
+                        size: 512,
+                    }, true);
     }
     if (resumeObject.basics.picture || resumeObject.basics.gravatar) {
         resumeObject.photo = resumeObject.basics.picture ? resumeObject.basics.picture : resumeObject.basics.gravatar;
@@ -186,6 +186,10 @@ function render(resumeObject) {
         });
     }
 
+    if (resumeObject.projectsBool || resumeObject.volunteerBool) {
+        resumeObject.allProjectsBool = true;
+    }
+
     if (resumeObject.education && resumeObject.education.length) {
         if (resumeObject.education[0].institution) {
             resumeObject.educationBool = true;
@@ -272,7 +276,6 @@ function render(resumeObject) {
     resumeObject.css = fs.readFileSync(__dirname + "/style.css", "utf-8");
     var theme = fs.readFileSync(__dirname + '/resume.template', 'utf-8');
     var resumeHTML = Mustache.render(theme, resumeObject);
-
 
     return resumeHTML;
 };
