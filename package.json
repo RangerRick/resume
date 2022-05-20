@@ -19,7 +19,7 @@
   },
   "nodemonConfig": {
     "delay": 500,
-    "ext": "css,js,json,template",
+    "ext": "css,js,json,sh,template",
     "ignore": [
       "dist/*"
     ]
