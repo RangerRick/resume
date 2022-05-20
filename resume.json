@@ -6,7 +6,7 @@
     "email": "resume@raccoonfink.com",
     "phone": "(919) 200-0655",
     "url": "https://rangerrick.github.io/",
-    "summary": "I am a software developer, musician, and tech polymath, and I have been interested in computers and software since childhood. I enjoy learning new technologies and applying that knowledge to the development of good software. I have a wide breadth of knowledge, but I'm not afraid to do a deep dive on a subject to get the job done. I have worked in and around open-source software for many years, and I have been involved in (and contributed to) many communities since then.",
+    "summary": "I am a software developer, musician, and tech polymath, and I have been interested in computers and software since childhood. I enjoy learning new technologies and applying that knowledge to the development of good software, whether it's backend, frontend, or full-stack. I have a wide breadth of knowledge, but I'm not afraid to do a deep dive on a subject to get the job done. I have worked in and around open-source software for many years, and I have been involved in (and contributed to) many communities since then.",
     "location": {
       "city": "Apex",
       "postalCode": "NC, 27539",
@@ -195,18 +195,6 @@
   ],
   "projects": [
     {
-      "name": "Git Cookbook",
-      "description": "A git-based cookbook for sharing recipes.",
-      "url": "https://rangerrick.github.io/git-cookbook/",
-      "keywords": [
-        "baking",
-        "cooking",
-        "cookbook",
-        "mdbook",
-        "markdown"
-      ]
-    },
-    {
       "name": "moment-javaformat",
       "description": "A TypeScript project to support Java DateTime format strings in moment.js.",
       "url": "https://www.npmjs.com/package/@rangerrick/moment-javaformat/",
@@ -257,6 +245,18 @@
         "Blaseball",
         "Game",
         "SVG"
+      ]
+    },
+    {
+      "name": "Git Cookbook",
+      "description": "A git-based cookbook for sharing recipes.",
+      "url": "https://rangerrick.github.io/git-cookbook/",
+      "keywords": [
+        "baking",
+        "cooking",
+        "cookbook",
+        "mdbook",
+        "markdown"
       ]
     }
   ],
