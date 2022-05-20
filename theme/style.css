@@ -323,7 +323,7 @@ section.skills {
 	}
 
 	.mainDetails {
-		padding: 15px 15px 0 15px;
+		padding: 15px 0 0 0;
 	}
 	.mainDetails div.clear {
 		height: 0;
@@ -352,7 +352,6 @@ section.skills {
 	#mainArea {
 		padding: 0 25px 25px;
 	}
-
 
 	#name h1 {
 		line-height: .8em;
