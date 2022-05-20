@@ -6,9 +6,8 @@
     "email": "resume@raccoonfink.com",
     "phone": "(919) 200-0655",
     "url": "https://rangerrick.github.io/",
-    "summary": "A software developer, musician, and tech polymath, I have been following nerdy pursuits since childhood. I enjoy learning new technologies, and applying that knowledge to the development of good software. I am proficient in a wide range of technologies, and just as good at applying my wide breadth of knowledge as I am at doing a deep dive into details when suitable.",
+    "summary": "I am a software developer, musician, and tech polymath, and I have been interested in computers and software since childhood. I enjoy learning new technologies and applying that knowledge to the development of good software. I have a wide breadth of knowledge, but I'm not afraid to do a deep dive on a subject to get the job done. I have worked in and around open-source software for many years, and I have been involved in (and contributed to) many communities since then.",
     "location": {
-      "address": "7428 Bleasdale Ct",
       "city": "Apex",
       "postalCode": "NC, 27539",
       "countryCode": "US",
@@ -41,10 +40,11 @@
         "Maintain the RPM and Debian packaging, and contribute significantly to the Docker image maintenance and publishing.",
         "Primary maintainer of the CircleCI pipeline, providing build and test infrastructure for LTS branches, releases, and vendor branches.",
         "Primary maintainer of related projects including JNI native interfaces to ICMP and RRDtool.",
-        "Core maintainer of OpenNMS Helm, a plugin providing datasources and views for Grafana.",
-        "Author of the (mostly) weekly development newsletter \"OpenNMS On the Horizon\".",
-        "\"Company historian\", responsible for helping new hires navigate the software and understand our code and systems.",
-        "Sole developer of OpenNMS Compass, an Ionic-based mobile interface to OpenNMS."
+        "Core maintainer of OpenNMS Helm, a comprehensive plugin providing datasources and panels for Grafana.",
+        "Author of the weekly development newsletter OpenNMS On the Horizon.",
+        "\"Company historian,\" responsible for helping new hires navigate the software and understand our code and systems.",
+        "Sole developer of OpenNMS Compass, an Ionic-based mobile interface to OpenNMS.",
+        "Overhaul of OpenNMS's startup and runtime to execute as a non-root user."
       ]
     },
     {
@@ -57,7 +57,7 @@
       "endDate": "2007-05-01",
       "summary": "Perl and Java programmer.  Responsible for developing and maintaining a number of subsystems for the CC-NOC line of network management appliances.",
       "highlights": [
-        "Updated appliance software to run on the latest CentOS, including aiding in design and implementation of a set of tools for automated custom kickstart distribution generation for rapid appliance and OS development.",
+        "Updated appliance software to run on the latest CentOS, including aiding in design and implementation of a set of tools for automated distribution generation for rapid appliance and OS development.",
         "Wrote a tool for restoring old backups that converts and upgrades backup data between versions seamlessly, as well as allow backups to be restored to any CC-NOC appliance while retaining existing events and performance data.",
         "Wrote a tool to completely automate the build process, building on the existing kickstart infrastructure."
       ]
@@ -71,13 +71,13 @@
       "endDate": "2006-02-01",
       "summary": "Perl and Java programmer.  Responsible for developing and maintaining eReader.com -- a large-scale mod_perl-based e-commerce site -- using Red Hat Enterprise Linux, Apache, and mod_perl (HTML::Mason) as well as internal Java-based systems for e-commerce integration.",
       "highlights": [
-        "Successfully performed a large-scale move of the eReader.com site to a new colocation facility, including configuring hardware and software, setting up procedures for migration, and developing tools for reproducing a production environment on new hardware.",
-        "Migration of a CVS repository to Subversion.",
-        "Design and implementation of a custom FTP server to be used by publishers and content administrators.",
-        "Implementation and aid in design of a Java-based business-logic proxy for handling mailing lists across multiple properties from a central location.",
-        "Designated \"Technical Captain\" (subject matter expert) for the care and future development of the business-logic proxy project.",
-        "Design and implementation of the Omniture site performance and usage tracking system for eReader.com, including creating a detailed taxonomy standard to be used across Motricity's properties.  I also acted as a technical resource to aid in the development of other Motricity Omniture implementations.",
-        "Design and implementation of an ONIX import infrastructure for receiving books from other publishers and book resellers for use on the eReader.com site."
+        "Performed a large-scale move of the eReader.com site to a new colocation facility, including configuring hardware and software, setting up procedures for migration, and developing tools for reproducing a production environment on new hardware.",
+        "Migrated the production eReader CVS repository to Subversion.",
+        "Designed and implemented a custom FTP server to be used by publishers and content administrators.",
+        "Implemented and helped design a Java-based business-logic proxy for handling mailing lists across multiple properties from a central location.",
+        "Became \"Technical Captain\" (subject matter expert) for the care and future development of the business-logic proxy project.",
+        "Designed and Implemented the Omniture site performance and usage tracking system for eReader.com, including creating a detailed taxonomy standard to be used across Motricity's properties.  I also acted as a technical resource to aid in the development of other Motricity Omniture implementations.",
+        "Created an ONIX import infrastructure for receiving books from other publishers and book resellers for use on the eReader.com site."
       ]
     },
     {
@@ -89,21 +89,20 @@
       "endDate": "2004-05-01",
       "summary": "Perform a wide variety of administration and automation tasks. Duties include design, implementation, maintainance, and administration of the source code tree, web, mail, and other infrastructure servers, as well as other office network and system admin.  Primarily involved in scripting and support related to the infrastructure that provides backups, updates, and nightly tasks for Oculan's line of network management appliances.",
       "highlights": [
-        "Design and development of a customized Linux distribution for our appliances.",
-        "RPM packaging and distribution system for updates",
-        "Design and implementation of the OpticNerve build system, using Ant and Java.",
-        "Software for doing an in-place upgrade of the underlying (Linux) operating system on appliances in the field, while retaining historical data.",
-        "A system for allowing the customer to initiate a support connection that creates a tunnel back to the appliance for trouble-shooting.",
-        "A secure (SMTP-Auth-based) mail system for employees in the office and around the globe.",
-        "Tools for backing up and monitoring remote appliances, as well as notifying customers of potential issues through our support team.",
-        "Design and implementation of a filtering reverse proxy for web access to a custom demo environment using Apache and mod_perl."
+        "Designed and developed of a customized Linux distribution for our appliances.",
+        "Created an RPM packaging and distribution system for updates.",
+        "Designed and implemented the OpticNerve build system, using Ant and Java.",
+        "Created software for doing an in-place upgrade of the underlying (Linux) operating system on appliances in the field, while retaining historical data.",
+        "Developed a system for allowing the customer to initiate a support connection that creates a tunnel back to the appliance for trouble-shooting.",
+        "Implemented a secure (SMTP-Auth-based) mail system for employees in the office and around the globe.",
+        "Created tools for backing up and monitoring remote appliances, as well as notifying customers of potential issues through our support team.",
+        "Implemented a filtering reverse proxy for web access to a custom demo environment using Apache and mod_perl."
       ]
     }
   ],
   "volunteer": [
     {
       "organization": "The Fink Project",
-      "position": "Project Core Team and Packager",
       "url": "https://finkproject.org/",
       "startDate": "2001-09-01",
       "endDate": "2014-01-01",
@@ -112,14 +111,14 @@
         "Helped develop the core Fink software and manage the infrastructure for distribution of packages.",
         "Maintained hundreds of ported packages.",
         "Worked with Apple to diagnose and report issues with Mac OS X.",
-        "Coordinated with MacPorts and Apple to develop a prototype packaging system for Mac OS X. (unreleased)",
+        "Coordinated with MacPorts and Apple to develop an unreleased packaging system for Mac OS X.",
         "Ported KDE to Qt/Mac on Mac OS X."
       ]
     }
   ],
   "skills": [
     {
-      "name": "Web Development",
+      "name": "Web",
       "level": "Master",
       "keywords": [
         "HTML",
@@ -139,7 +138,7 @@
       ]
     },
     {
-      "name": "Mobile Development",
+      "name": "Mobile",
       "level": "Advanced",
       "keywords": [
         "Ionic",
@@ -159,7 +158,6 @@
         "Bamboo",
         "Karaf",
         "Docker",
-        "Bash",
         "Perl"
       ]
     }
@@ -200,7 +198,6 @@
       "name": "Git Cookbook",
       "description": "A git-based cookbook for sharing recipes.",
       "url": "https://rangerrick.github.io/git-cookbook/",
-      "startDate": "2021-08-12",
       "keywords": [
         "baking",
         "cooking",
@@ -211,16 +208,37 @@
     },
     {
       "name": "moment-javaformat",
-      "description": "A TypeScript project to support Java DateTime format strings in moment.js",
+      "description": "A TypeScript project to support Java DateTime format strings in moment.js.",
+      "url": "https://www.npmjs.com/package/@rangerrick/moment-javaformat/",
       "keywords": [
         "npm",
         "Node.js",
         "JavaScript",
         "TypeScript",
         "Java"
+      ]
+    },
+    {
+      "name": "CruiseMonkey and Twit-arr",
+      "description": "A social network and app used on JoCo Cruise: a music, comedy, writing, and geek con on a cruise ship.",
+      "url": "https://twitter.com/Cruise_Monkey",
+      "startDate": "2012-02-19",
+      "highlights": [
+        "Implemented a crowd-sourced calendar and organization tool.",
+        "Created a searchable SVG map and list of amenities for the cruise ship.",
+        "Wrote a BLE beacon API for doing background updates on the boat when no internet is available."
       ],
-      "startDate": "2020-01-22",
-      "url": "https://www.npmjs.com/package/@rangerrick/moment-javaformat/"
+      "keywords": [
+        "Twitter",
+        "Ionic",
+        "Capacitor",
+        "JavaScript",
+        "TypeScript",
+        "Angular",
+        "Ruby",
+        "Rails",
+        "Docker"
+      ]
     },
     {
       "name": "Blases Loaded (archived)",
