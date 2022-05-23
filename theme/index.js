@@ -264,6 +264,11 @@ function render(resumeObject) {
         if (resumeObject.interests[0].name) {
             resumeObject.interestsBool = true;
         }
+        for (const interest of resumeObject.interests) {
+            if (interest.keywords && interest.keywords.length) {
+                interest.keywordsBool = true;
+            }
+        }
     }
 
     if (resumeObject.languages && resumeObject.languages.length) {
