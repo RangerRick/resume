@@ -1,0 +1,33 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Benjamin Reed",
+    "label": "Software Engineer",
+    "email": "resume@raccoonfink.com",
+    "phone": "(919) 200-0655",
+    "summary": "I am a software developer, musician, and tech polymath, and I have been interested in computers and software since childhood. I enjoy learning new technologies and applying that knowledge to the development of good software, whether it's backend, frontend, or full-stack. I have a wide breadth of knowledge, but I'm not afraid to do a deep dive on a subject to get the job done. I have worked in and around open-source software for many years, and have contributed to many projects and communities.",
+    "location": {
+      "city": "Apex",
+      "postalCode": "NC, 27539",
+      "countryCode": "US",
+      "region": "Southeast"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "RangerRick",
+        "url": "https://twitter.com/RangerRick"
+      },
+      {
+        "network": "Bandcamp",
+        "username": "Raccoon Fink",
+        "url": "https://raccoonfink.bandcamp.com/"
+      }
+    ]
+  },
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/RangerRick/resume/main/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2022-05-23T11:23:00"
+  }
+}
