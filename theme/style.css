@@ -12,7 +12,7 @@ vertical-align:baseline;
 	--columbia-blue: #B9CFD4;
 	--cultured: #EEEEEE;
 	--english-lavender: #B48291;
-	--isabelline: #FFFAF5;
+	--isabelline: #FFFcF9;
 	--platinum: #E6EBEA;
 	--rose-dust: #A65A69;
 	--silver-metallic: #AFAAB9;
@@ -102,7 +102,7 @@ ul li {
 }
 
 #mainArea {
-	padding: 0 40px 40px;
+	padding: 0;
 }
 
 #mainArea article {
@@ -135,7 +135,8 @@ ul li {
 
 section {
 	border-top: 1px solid var(--border-color);
-	padding: 20px 0 0;
+	padding: 20px 20px 0;
+	margin: 0 40px;
 }
 
 section:first-child {
@@ -143,7 +144,7 @@ section:first-child {
 }
 
 section:last-child {
-	padding: 20px 0 10px;
+	padding: 10px 25px 25px;
 }
 
 .sectionTitle {
@@ -160,9 +161,10 @@ section:last-child {
 	font-family: var(--section-style);
 	font-size: 1.5em;
 	font-variant: small-caps;
+	font-weight: bolder;
+	/* line-height: 1em; */
 	color: var(--highlight-color) !important;
 	text-align: right;
-	/* vertical-align: top; */
 }
 
 .sectionContent h1 {
@@ -182,12 +184,12 @@ section:last-child {
 	margin-bottom: 3px;
 }
 
-.skills h2 {
+.keywordSection h2 {
 	width: 49%;
 	display: inline-block;
 }
 
-.skills .skill-level {
+.keywordSection .level {
 	width: 50%;
 	display: inline-block;
 	font-weight: 100;
@@ -196,31 +198,10 @@ section:last-child {
 	font-weight: bolder;
 }
 
-.skill-level.Beginner, .skill-level.beginner {
-	color: var(--cultured);
-	background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 80%, var(--skill-bar-color) 90%, var(--skill-bar-color) 100%);
-}
-
-.skill-level.Intermediate, .skill-level.intermediate {
-	color: var(--cultured);
-	background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 60%, var(--skill-bar-color) 70%, var(--skill-bar-color) 100%);
-}
-
-.skill-level.Advanced, .skill-level.advanced {
-	color: var(--cultured);
-	background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 40%, var(--skill-bar-color) 50%, var(--skill-bar-color) 100%);
-}
-
-.skill-level.Master, .skill-level.master {
-	color: var(--cultured);
-	background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 20%, var(--skill-bar-color) 30%, var(--skill-bar-color) 100%);
-}
-
-.skills .skill {
+.keywordSection .keyword {
 	margin-left: 0.2em;
 	margin-right: 0.2em;
 }
-
 
 .contact-item{
   width: 100%;
@@ -261,11 +242,6 @@ section.projects {
 	break-before: page;
 /*	break-after: page; */
 }
-/*
-section.skills {
-	break-before: page;
-}
-*/
 
 .projects .description {
 	margin: 0;
@@ -291,6 +267,10 @@ section.skills {
 	}
 	#name h2 {
 		font-size: 1.5em;
+	}
+
+	section {
+		margin-left: 0;
 	}
 }
 
@@ -346,11 +326,12 @@ section.skills {
 
 @media all and (max-width: 480px) {
 	section {
-		padding: 15px 0 0;
+		padding: 10px 25px 0;
+		margin: 0;
 	}
 
 	#mainArea {
-		padding: 0 25px 25px;
+		padding: 0;
 	}
 
 	#name h1 {
@@ -361,7 +342,7 @@ section.skills {
 
 @media print {
 	html, body {
-		font-size: 12.15pt;
+		font-size: 11.2pt;
 		width:100%;
 		height:auto;
 		margin:inherit;
@@ -409,6 +390,7 @@ section.skills {
 
 	.mainDetails, #mainArea {
 		padding: 0;
+		margin: 0;
 		border: none !important;
 	}
 
@@ -444,7 +426,15 @@ section.skills {
 		break-inside: avoid-page;
 	}
 
-	.sectionContent {
+	section {
+		padding: 9px 9px 0;
+		margin: 0;
+	}
+
+	section:last-child {
+		padding: 9px 9px 9px;
+	}
+		.sectionContent {
 		break-before: avoid-page;
 	}
 
@@ -453,37 +443,37 @@ section.skills {
 		margin-bottom: 10px;
 	}
 
-	.skill-header > * {
+	.keywordSection .header > * {
 		display: inline-block !important;
 		width: auto !important;
 	} 
 
-	.skills .skill-level::before {
+	.keywordSection .level::before {
 		content: '(';
 	}
-	.skills .skill-level::after {
+	.keywordSection .level::after {
 		content: ')';
 	}
 
-	.skills .sectionContent {
+	.keywordSection .sectionContent {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
 	}
 
-	.skills .sectionContent article {
+	.keywordSection .sectionContent article {
 		flex: 25%;
 	}
 
-	.skills {
+	.keywordSection {
 		list-style: disc;
 	}
-	.skills ul {
+	.keywordSection ul {
 		display: inline-block;
 		text-align: left;
 		padding-left: 1em;
 	}
-	.skills ul li {
+	.keywordSection ul li {
 		display: list-item;
 		text-align: left;
 		margin: 0;

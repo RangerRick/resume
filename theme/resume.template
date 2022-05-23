@@ -169,7 +169,7 @@
 				</section>
 				{{/allProjectsBool}}
 				{{#skillsBool}}
-				<section class="skills">
+				<section class="keywordSection">
 					<div class="sectionTitle">
                         <h1>Skills</h1>
                     </div>
@@ -177,20 +177,15 @@
                     {{#skills}}
 					<article>
 						<div class="info">
-							<div class="skill-header">
-                            <h2>
+							<div class="header">
+                            <h1>
 							{{name}}
-							</h2>
-							<!--
-							{{#level}}
-							<div class="skill-level {{level}}">{{level}}</div>
-							{{/level}}
-							-->
+							</h1>
 							</div>
 							{{#keywordsBool}}
-							<ul class="skills-keywords subDetails">
+							<ul class="keywords subDetails">
 								{{#keywords}}
-								<li class="skill badge">{{{.}}}</li>
+								<li class="keyword badge">{{{.}}}</li>
 								{{/keywords}}
 							</ul>
 							{{/keywordsBool}}
@@ -201,6 +196,34 @@
 					<div class="clear"></div>
 				</section>
 				{{/skillsBool}}
+				{{#interestsBool}}
+				<section class="keywordSection">
+					<div class="sectionTitle">
+                        <h1>Interests</h1>
+                    </div>
+                    <div class="sectionContent">
+                    {{#interests}}
+					<article>
+						<div class="info">
+							<div class="header">
+                            <h1>
+							{{name}}
+							</h1>
+							</div>
+							{{#keywordsBool}}
+							<ul class="keywords subDetails">
+								{{#keywords}}
+								<li class="keyword badge">{{{.}}}</li>
+								{{/keywords}}
+							</ul>
+							{{/keywordsBool}}
+						</div>
+					</article>
+					{{/interests}}
+					</div>
+					<div class="clear"></div>
+				</section>
+				{{/interestsBool}}
 			</div>
 		</div>
 		<script type="text/javascript">
