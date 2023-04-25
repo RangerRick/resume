@@ -8,7 +8,7 @@ export CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 cd "${TOPDIR}"
 rm -f .dist/*
-npm run hackmyresume -- build basics.json resume.json TO ./dist/benjamin-reed-resume.html ./dist/benjamin-reed-resume.json -t theme
+npm run hackmyresume -- build basics.json resume.json TO ./dist/benjamin-reed-resume.html ./dist/benjamin-reed-resume.json -t theme-pdf
 "$CHROME" --headless \
 	--verbose \
 	--disable-gpu \

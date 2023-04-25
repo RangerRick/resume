@@ -14,9 +14,9 @@
     },
     "profiles": [
       {
-        "network": "Twitter",
+        "network": "GitHub",
         "username": "RangerRick",
-        "url": "https://twitter.com/RangerRick"
+        "url": "https://github.com/RangerRick"
       },
       {
         "network": "Bandcamp",

@@ -203,6 +203,15 @@ section:last-child {
 	margin-right: 0.2em;
 }
 
+@media screen and (min-width: 940px) {
+	.skills.keywordSection .sectionContent h1, .skills.keywordSection .sectionContent .header, .skills.keywordSection .sectionContent ul {
+		display: inline-block;
+	}
+	.skills.keywordSection .sectionContent h1 {
+		width: 6em;
+	}
+}
+
 .contact-item{
   width: 100%;
   float: left;
@@ -342,7 +351,7 @@ section.projects {
 
 @media print {
 	html, body {
-		font-size: 11.2pt;
+		font-size: 10.5pt;
 		width:100%;
 		height:auto;
 		margin:inherit;

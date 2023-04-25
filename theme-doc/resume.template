@@ -79,6 +79,34 @@
 					<div class="clear"></div>
 				</section>
 				{{/basics.summary}}
+				{{#skillsBool}}
+				<section class="skills keywordSection">
+					<div class="sectionTitle">
+                        <h1>Skills</h1>
+                    </div>
+                    <div class="sectionContent">
+                    {{#skills}}
+					<article>
+						<div class="info">
+							<div class="header">
+                            <h1>
+							{{name}}
+							</h1>
+							</div>
+							{{#keywordsBool}}
+							<ul class="keywords subDetails">
+								{{#keywords}}
+								<li class="keyword badge">{{{.}}}</li>
+								{{/keywords}}
+							</ul>
+							{{/keywordsBool}}
+						</div>
+					</article>
+					{{/skills}}
+					</div>
+					<div class="clear"></div>
+				</section>
+				{{/skillsBool}}
 				{{#workBool}}
 				<section>
 					<div class="sectionTitle">
@@ -168,36 +196,8 @@
 					<div class="clear"></div>
 				</section>
 				{{/allProjectsBool}}
-				{{#skillsBool}}
-				<section class="keywordSection">
-					<div class="sectionTitle">
-                        <h1>Skills</h1>
-                    </div>
-                    <div class="sectionContent">
-                    {{#skills}}
-					<article>
-						<div class="info">
-							<div class="header">
-                            <h1>
-							{{name}}
-							</h1>
-							</div>
-							{{#keywordsBool}}
-							<ul class="keywords subDetails">
-								{{#keywords}}
-								<li class="keyword badge">{{{.}}}</li>
-								{{/keywords}}
-							</ul>
-							{{/keywordsBool}}
-						</div>
-					</article>
-					{{/skills}}
-					</div>
-					<div class="clear"></div>
-				</section>
-				{{/skillsBool}}
 				{{#interestsBool}}
-				<section class="keywordSection">
+				<section class="interests keywordSection">
 					<div class="sectionTitle">
                         <h1>Interests</h1>
                     </div>

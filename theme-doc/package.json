@@ -1,0 +1,8 @@
+{
+  "name": "jsonresume-theme-benjamin-pdf",
+  "version": "1.0.0",
+  "description": "A Responsive JSON Resume theme built with bootstrap",
+  "main": "index.js",
+  "author": "Benjamin Reed",
+  "license": "MIT"
+}
