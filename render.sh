@@ -24,4 +24,4 @@ npm run hackmyresume -- build basics.json resume.json TO ./dist/benjamin-reed-re
 
 chmod 644 dist/*
 
-rsync -avr --delete ./dist/ ranger@secure.befunk.com:~/public_html/temp/resume-2022/
+rsync -avr --delete ./dist/ ranger@ln1.raccoonfink.com:~/public_html/temp/resume-2022/
