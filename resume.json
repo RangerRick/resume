@@ -13,13 +13,13 @@
       "highlights": [
         "Core developer on the Java and JavaScript code in the OpenNMS codebase.",
         "Maintain the RPM and Debian packaging, and contribute significantly to the Docker image maintenance and publishing.",
-        "Primary maintainer of the CircleCI pipeline, providing build and test infrastructure for LTS branches, releases, and vendor branches.",
+        "A Core maintainer of the CircleCI pipeline, providing build and test infrastructure for LTS branches, releases, and vendor branches.",
         "Primary maintainer of related projects including JNI native interfaces to ICMP and RRDtool.",
-        "Core maintainer of OpenNMS Helm, a comprehensive plugin providing datasources and panels for Grafana.",
-        "Author of the weekly development newsletter OpenNMS On the Horizon.",
-        "\"Company historian,\" responsible for helping new hires navigate the software and understand our code and systems.",
-        "Sole developer of OpenNMS Compass, an Ionic-based mobile interface to OpenNMS.",
-        "Overhaul of OpenNMS's startup and runtime to execute as a non-root user."
+        "A Core developer of the Grafana Plugin for OpenNMS.",
+        "Developed and released OpenNMS Compass, an Ionic-based mobile interface to OpenNMS.",
+        "Overhaul of OpenNMS's startup and runtime to execute as a non-root user.",
+        "Responsible for uplifting old core systems to newer versions, systematically cleaning up old code with CVEs and potential security issues.",
+        "\"Company historian,\" responsible for helping new hires and other engineers navigate the software and understand our code and systems."
       ]
     },
     {
@@ -106,10 +106,12 @@
       "name": "Java",
       "level": "Master",
       "keywords": [
-        "Maven",
         "Java",
-        "Eclipse",
-        "Karaf"
+        "Karaf",
+        "Maven",
+        "OSGi",
+        "Spring",
+        "Eclipse"
       ]
     },
     {
