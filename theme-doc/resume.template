@@ -146,6 +146,27 @@
 						<h1>Projects</h1>
 					</div>
 					<div class="sectionContent">
+						{{#projects}}
+						<article>
+							{{#url}}
+                            <h1><a href="{{url}}">{{name}}</a></h1>
+							{{/url}}
+							{{^url}}
+                            <h2>{{name}}</h2>
+							{{/url}}
+							{{#startDate}}
+                            <p class="subDetails">{{startDateMonth}}{{startDateYear}} – {{endDateMonth}}{{endDateYear}}</p>
+							{{/startDate}}
+							<p class="description">{{description}}</p>
+                            {{#boolHighlights}}
+                                <ul class="info">
+                                    {{#highlights}}
+                                    <li>{{{.}}}</li>
+                                    {{/highlights}}
+                                </ul>
+                            {{/boolHighlights}}
+						</article>
+						{{/projects}}
 						{{#volunteer}}
 						<article>
 							<h1>
@@ -171,27 +192,6 @@
 							{{/boolHighlights}}
 						</article>
 						{{/volunteer}}
-						{{#projects}}
-						<article>
-							{{#url}}
-                            <h1><a href="{{url}}">{{name}}</a></h1>
-							{{/url}}
-							{{^url}}
-                            <h2>{{name}}</h2>
-							{{/url}}
-							{{#startDate}}
-                            <p class="subDetails">{{startDateMonth}}{{startDateYear}} – {{endDateMonth}}{{endDateYear}}</p>
-							{{/startDate}}
-							<p class="description">{{description}}</p>
-                            {{#boolHighlights}}
-                                <ul class="info">
-                                    {{#highlights}}
-                                    <li>{{{.}}}</li>
-                                    {{/highlights}}
-                                </ul>
-                            {{/boolHighlights}}
-						</article>
-						{{/projects}}
 					</div>
 					<div class="clear"></div>
 				</section>
