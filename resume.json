@@ -181,9 +181,20 @@
       ]
     },
     {
+      "name": "JSON resume",
+      "description": "This resume! Using the JSON resume format, with custom CSS and formatting.",
+      "url": "https://github.com/RangerRick/resume",
+      "keywords": [
+        "npm",
+        "Node.js",
+        "JSON",
+        "Resume"
+      ]
+    },
+    {
       "name": "CruiseMonkey and Twit-arr",
       "description": "A social network and app used on JoCo Cruise: a music, comedy, writing, and geek con on a cruise ship.",
-      "url": "https://twitter.com/Cruise_Monkey",
+      "url": "https://github.com/jocosocial/",
       "startDate": "2012-02-19",
       "highlights": [
         "Implemented a crowd-sourced calendar and organization tool.",
@@ -199,7 +210,8 @@
         "Angular",
         "Ruby",
         "Rails",
-        "Docker"
+        "Docker",
+        "Swift"
       ]
     },
     {
@@ -237,6 +249,6 @@
   "meta": {
     "canonical": "https://raw.githubusercontent.com/RangerRick/resume/main/resume.json",
     "version": "v1.0.0",
-    "lastModified": "2022-05-17T15:43:00"
+    "lastModified": "2023-05-04T10:23:00"
   }
 }
