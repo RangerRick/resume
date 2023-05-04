@@ -192,6 +192,18 @@
       ]
     },
     {
+      "name": "Git Cookbook",
+      "description": "A git-based cookbook for sharing recipes.",
+      "url": "https://rangerrick.github.io/git-cookbook/",
+      "keywords": [
+        "baking",
+        "cooking",
+        "cookbook",
+        "mdbook",
+        "markdown"
+      ]
+    },
+    {
       "name": "CruiseMonkey and Twit-arr",
       "description": "A social network and app used on JoCo Cruise: a music, comedy, writing, and geek con on a cruise ship.",
       "url": "https://github.com/jocosocial/",
@@ -231,18 +243,6 @@
         "Blaseball",
         "Game",
         "SVG"
-      ]
-    },
-    {
-      "name": "Git Cookbook",
-      "description": "A git-based cookbook for sharing recipes.",
-      "url": "https://rangerrick.github.io/git-cookbook/",
-      "keywords": [
-        "baking",
-        "cooking",
-        "cookbook",
-        "mdbook",
-        "markdown"
       ]
     }
   ],
